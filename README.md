@@ -14,7 +14,6 @@ The interface is built around a **Stone & Amber** design philosophy:
 * **Accents:** Radiant golds and warm ambers for call-to-action buttons and key property highlights.
 * **Typography:** Clean, professional sans-serif fonts for maximum readability.
 
-
 ## Current Features (Frontend)
 
 * **Property Showcases:** Elegant grid and list layouts for luxury apartments and estates.
