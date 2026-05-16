@@ -1,16 +1,16 @@
 body{
-    margin: 4px;
+    margin: 0;
 }
 i{
+    display: inline-block;
     width: 20px;
     height: 20px;
     color: red;
 }
-nav ul {
-    display: flex;
-}
 
 nav ul {
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     gap: 20px;
 }
@@ -20,8 +20,9 @@ nav a {
 
 .container{
     box-shadow: 2px 2px 2px gray;
-    width: 200px;
-    height: 30vh;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
     background-color: yellow;
     color: black;
     border-radius: 8px;
@@ -42,13 +43,15 @@ nav a {
     border-radius: 8px;
 }
 .background-two{
-    background-color: rgba(77, 2, 42);
+    background-color: rgba(77, 2, 42, 1);
     height: 100px;
     width: 100px;
     border-radius: 8px;
 }   
 main{
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .glass{
@@ -56,18 +59,22 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
+    overflow: hidden;
     width: 100%;
 }
 .bg-img{
+    position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card{
     position: absolute;
     height: 60%;
-    width: 40%;
+    width: 90%;
+    max-width: 500px;
     border: 2px solid rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(2px);
     border-radius: 1em;
@@ -106,4 +113,31 @@ main{
     border: 1px solid red;
     background-color: blueviolet;
     box-sizing: border-box;
+}
+@media (min-width: 600px){
+
+    nav ul{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 768px){
+    main {
+        padding: 2rem;
+    }
+    .glass {
+        min-height: 50vh;
+    }
+}
+
+@media (min-width: 1024px){
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .glass {
+        min-height: 60vh;
+    }
 }
